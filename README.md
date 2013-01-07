@@ -1,4 +1,4 @@
-CDVPlugin
+CDVEmailComposer
 ===
 
 Cordova (iOS) Xcode Plugin Template
