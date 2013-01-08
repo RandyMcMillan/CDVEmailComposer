@@ -1,3 +1,9 @@
+//
+//  ___FILEBASENAME___
+//  CDVEmailComposer Template Created Jan 7 2013
+//  Copyright 2013 @RandyMcMillan
+
+
 function ___FILEBASENAME___() {
 	this.resultCallback = null; // Function
 }
