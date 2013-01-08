@@ -10,8 +10,8 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface ___FILEBASENAME___ : CDVPlugin oseViewControllerDelegate > {}
+@interface ___FILEBASENAME___ : CDVPlugin < MFMailComposeViewControllerDelegate > {}
 
-- (void)show___FILEBASENAME___:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options;
+- (void)showEmailComposer:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options;
 
 @end

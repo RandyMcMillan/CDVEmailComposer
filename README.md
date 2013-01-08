@@ -1,5 +1,4 @@
-.
-CDVEmailComposer
+___FILEBASENAME___ 
 ===
 
 Cordova (iOS) Xcode Plugin Template
@@ -7,28 +6,66 @@ Cordova (iOS) Xcode Plugin Template
 
 
 
+
 ###Installation:
     $ cd ~/Library/Developer/Xcode/Templates/File\ Templates
-    $ git clone https://github.com/RandyMcMillan/CDVPlugin.git
+    $ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
 
-![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot.png)
+![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot.png)
 
 ###Usage:
 ####Open your Cordova (iOS) Xcode Project
 
-* Press <COMMAND+n>    
+* Press `<COMMAND+n>`    
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot2.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot2.png)  
 
-* RENAME your Plugin! (_Do not use CDVPlugin_)  
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot3.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png)  
 
-* Copy the MyCDVPlugin.js file to your /www folder
+* Copy the ___FILEBASENAME___.js file to your /www folder
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot4.png)
+    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png)
     
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPlugin/master/CDVPlugin.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+
+####Add to www/index.html
+
+`<script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"></script>`
+
+
+
+
+#####Add Cordova.plist values
+
+| Key | Type | Value |
+| ------------ |---| ------------- |
+| ___FILEBASENAME___ | String | ___FILEBASENAME___ |
+
+#####Cordova 2.3+ Add config.xml values
+`<plugin name="___FILEBASENAME___" value="___FILEBASENAME___" />`
+
+<br>
+
+
+### • You will need to add MessageUI.framework to your project if it is not already included.
+
+
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+
+
+    cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+
+####or
+
+    function show () {
+                    
+            var args;
+            cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+                    
+                }
+
+
 
 
 <br><br>
