@@ -11,7 +11,7 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface ___FILEBASENAME___ : CDVPlugin < MFMailComposeViewControllerDelegate > {}
+@interface ___FILEBASENAME___ : CDVPlugin <MFMailComposeViewControllerDelegate>{}
 
 - (void)showEmailComposer:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options;
 

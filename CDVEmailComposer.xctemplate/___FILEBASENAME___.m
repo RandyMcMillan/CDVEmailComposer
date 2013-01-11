@@ -10,7 +10,6 @@
 //  CDVEmailComposer Template Created Jan 7 2013
 //  Copyright 2013 @RandyMcMillan
 
-
 #import "___FILEBASENAME___.h"
 
 @implementation ___FILEBASENAME___
